@@ -31,7 +31,7 @@ function Widget() {
   }
 
   function handleFeedbackSent() {
-    setFeedbackSent(true)
+    setFeedbackSent(true);
   }
 
   return (

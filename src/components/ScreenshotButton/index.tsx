@@ -13,7 +13,9 @@ interface Props {
 
 export function ScreenshotButton({ screenshot, onTakeShot, onRemoveShot }: Props) {
     return (
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity 
+        style={styles.container}
+        onPress={screenshot ? onRemoveShot : onTakeShot}>
             {
                 screenshot
                     ? <View>
